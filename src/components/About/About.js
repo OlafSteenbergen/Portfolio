@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+
+import Map from 'react-map-gl';
 
 function About() {
   return (
@@ -14,7 +15,7 @@ function About() {
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
-            md={7}
+            md={6}
             style={{
               justifyContent: "center",
               paddingTop: "30px",
@@ -22,18 +23,18 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+              About <strong className="purple">me</strong> and <strong className="purple">my projects</strong>
             </h1>
             <Aboutcard />
           </Col>
-          <Col
-            md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
-          >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+          <Col md={6} className="about-img">
+          <Map 
+              mapboxAccessToken="pk.eyJ1Ijoib2xhZi1zdGVlbmJlcmdlbiIsImEiOiJjbGdiMjRma2EwMndmM2txbWNkd3hibTVrIn0.0rvvdImWe9DKzGFOIGdRuQ"
+              initialViewState={{longitude: 0,latitude: 50, zoom: 1}}
+              mapStyle="mapbox://styles/olaf-steenbergen/clqse54v100sh01r5erpi4yff" />
           </Col>
         </Row>
+
         <h1 className="project-heading">
           Professional <strong className="purple">Skillset </strong>
         </h1>
@@ -45,7 +46,6 @@ function About() {
         </h1>
         <Toolstack />
 
-        <Github />
       </Container>
     </Container>
   );
