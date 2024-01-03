@@ -29,28 +29,33 @@ function Home2() {
             </li>
             <li>
                 <div class="date">2016</div>
-                <div class="title"><FaLaptopCode /> HTML, CSS, Javascript</div>
-                <div class="descr">Landed my first job as Front-end Developer working with a customer to define requirements and turn this into a (static) website.</div>
+                <div class="title" style={{color: 'gold'}}><MdOutlineWorkOutline /> Job announcement</div>
+                <div class="descr">Landed my first job as Front-end Developer of (static) websites.</div>
             </li>
             <li>
                 <div class="date">2017</div>
                 <div class="title"><FaLaptopCode /> Python, R</div>
-                <div class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima consequuntur soluta placeat iure totam commodi repellendus ea delectus, libero fugit quod reprehenderit, sequi quo, et dolorum saepe nulla hic.</div>
+                <div class="descr">Started my journey of learning more about data transformation, analysis and visualization in Python and R.</div>
+            </li>
+            <li>
+                <div class="date">2019</div>
+                <div class="title"><FaLaptopCode /> SQL, Database Management</div>
+                <div class="descr">Designed databases and learned how to use SQL.</div>
             </li>
             <li>
                 <div class="date">2019</div>
                 <div class="title"><FaLaptopCode /> React, React Native</div>
-                <div class="descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, cumque.</div>
+                <div class="descr">Used React (Native) for the first time to build a web application and multipel interactive websites commercially.</div>
             </li>
             <li>
                 <div class="date">2020</div>
                 <div class="title"><FaLaptopCode /> Django</div>
-                <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.</div>
+                <div class="descr">Developed my first web application!</div>
             </li>
             <li>
                 <div class="date">2021</div>
                 <div class="title" style={{color: 'gold'}}><MdOutlineWorkOutline /> Job announcement</div>
-                <div class="descr">Started working with the International Red Cross as Data Analyst, moving to Budapest.</div>
+                <div class="descr">Started working with the International Red Cross as Data Analyst.</div>
             </li>
             <li>
                 <div class="date">2021</div>
@@ -65,7 +70,7 @@ function Home2() {
             <li>
                 <div class="date">2023</div>
                 <div class="title"><FaLaptopCode /> MongoDB, PostgreSQL</div>
-                <div class="descr">.</div>
+                <div class="descr">Building onto my SQL knowledge, I looked into alternative database solutions and learned how to deploy them in web applications.</div>
             </li>
         </ul>
         </Row>

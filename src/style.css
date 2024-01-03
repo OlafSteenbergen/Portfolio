@@ -581,11 +581,14 @@ button:focus {
   transition: all 0.4s ease 0s !important;
 }
 
-@media (max-width: 767px) {
-  .tech-icons {
-    margin: 10px !important;
-  }
+.tech-icons p {
+  color: rgba(180, 129, 204, 0.637);
+  font-size: 25%;
+  font-weight: bold;
+  margin-bottom: -15% !important;
 }
+
+
 
 .tech-icons:hover {
   transform: translateY(-10px) !important;

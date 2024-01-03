@@ -4,13 +4,14 @@ import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiHtml5,
   DiCss3,
-  DiJavascript1,
+  DiJsBadge,
   DiReact,
   DiNodejs,
   DiMongodb,
   DiPython,
   DiGit,
   DiJava,
+  DiMysql
 } from "react-icons/di";
 import {
   SiRedis,
@@ -18,6 +19,7 @@ import {
   SiNextdotjs,
   SiSolidity,
   SiPostgresql,
+  SiRstudio
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
@@ -25,46 +27,32 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <DiHtml5 />
+      <p>Python</p><DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiCss3 />
+        <p>HTML</p><DiHtml5 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+      <p>CSS</p><DiCss3 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+      <p>JavaScript</p><DiJsBadge />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+      <p>React</p><DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+      <p>Node.js</p><DiNodejs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+      <p>MongoDB</p><DiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+      <p>PostgreSQL</p><SiPostgresql />
       </Col>
+      
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+      <p>MySQL</p><DiMysql />
       </Col>
     </Row>
   );
