@@ -6,9 +6,14 @@ import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 
-import Map from 'react-map-gl';
+import Map, {Marker} from 'react-map-gl';
 
 function About() {
+  const locs = [
+    {"lon": 12, "lat": 12},
+    {"lon": 13, "lat": 13},
+]
+
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -31,7 +36,16 @@ function About() {
           <Map 
               mapboxAccessToken="pk.eyJ1Ijoib2xhZi1zdGVlbmJlcmdlbiIsImEiOiJjbGdiMjRma2EwMndmM2txbWNkd3hibTVrIn0.0rvvdImWe9DKzGFOIGdRuQ"
               initialViewState={{longitude: 0,latitude: 50, zoom: 1}}
-              mapStyle="mapbox://styles/olaf-steenbergen/clqse54v100sh01r5erpi4yff" />
+              mapStyle="mapbox://styles/olaf-steenbergen/clqse54v100sh01r5erpi4yff">
+
+          {locs.map(e => (
+                      <Marker longitude={e.lon} latitude={e.lat} >
+                        <img src='' className='h-10'/>
+                        <p>HIER!!</p>
+                      </Marker>
+                    ))}    
+              
+          </Map>
           </Col>
         </Row>
 

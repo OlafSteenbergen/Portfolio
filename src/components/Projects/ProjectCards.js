@@ -1,10 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsFillInfoCircleFill } from "react-icons/bs";
 
 function ProjectCards(props) {
+  const [open, setOpen] = React.useState(false);
+ 
+    const handleClose = () => {
+        setOpen(false);
+    };
+ 
+    const handleOpen = () => {
+        setOpen(true);
+    };
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
@@ -31,8 +40,7 @@ function ProjectCards(props) {
           >
             <CgWebsite /> &nbsp;
             {"Demo"}
-          </Button>
-        )}
+          </Button>)}
       </Card.Body>
     </Card>
   );
