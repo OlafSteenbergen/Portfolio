@@ -26,7 +26,7 @@ function Articles() {
               <Card.Text style={{ textAlign: "justify" }}>Over the past decade, as private organizations have increased the amount of data that is being processed, governmental institutions and other non-profit organizations (who shall be referred to as public organizations) have followed suit. Both types of organizations carry responsibilities regarding personal data processing, yet as clients of public organizations are not always able to avoid services provided, additional questions arise regarding the transparency of processing. Currently, this transparency is lacking, causing privacy concerns of clients to rise due to what is termed informational uncertainty, or the lack of information regarding the content, the process, and the purpose of data processing. By taking an information systems (IS) perspective, this research shows five principles to be effective in enhancing the privacy of the general public for public organizations: transparency, accountability, purpose specification, security, and ownership. In addition, results show the influence of the absence of time and experience on these principles.</Card.Text>
             </Card.Body>
             <Button href='https://aisel.aisnet.org/icis2021/soc_impact/soc_impact/10/' target="_blank">Full read</Button>
-            <Card.Img variant="top" style={{ width: "60%", margin: "4%" }} src={articleimg} alt="card-img" />
+            <Card.Img variant="top" style={{ width: "60%", margin: "4%"}} src={articleimg} alt="card-img" />
           </Card>
           </Col>
           <Col md={6}>
